@@ -1,4 +1,4 @@
-package com.sece.springboot1.Controller;
+package com.sece.state1.Controller;
 
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,9 +10,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 @RestController 
 public class HelloController {
-    @GetMapping("/")
+    @GetMapping("/hello")
     public String getMethodName(@RequestParam String param) {
-        return "Hello World " + name ;
+        return "Hello World " + param ;
     }
     @PostMapping("/")
     public String postMethodName(@RequestBody String name) {
